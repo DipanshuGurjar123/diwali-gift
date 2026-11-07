@@ -22,6 +22,7 @@ function GiftBox({ formData, onClose }) {
       setIsOpening(true);
     }
   };
+  
 
   const handleLidAnimationEnd = () => {
     setIsOpened(true);
