@@ -1,0 +1,227 @@
+.app {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #4a1717,
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #120b0b,
+      #241010,
+      #100707
+    );
+}
+
+
+/* Main Card */
+
+.gift-form-section {
+  width: 100%;
+  max-width: 480px;
+
+  padding: 40px 35px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Diya */
+
+.diya {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+.gift-form-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+  color: #d8caca;
+
+  font-size: 15px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Form */
+
+.gift-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  text-align: left;
+}
+
+
+/* Form Group */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* Labels */
+
+.form-group label {
+  font-size: 14px;
+
+  color: #f3dddd;
+}
+
+
+/* Inputs + Select */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  font-size: 15px;
+}
+
+
+/* Placeholder */
+
+.form-group input::placeholder {
+  color: #a99999;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #e7a94b;
+
+  box-shadow:
+    0 0 0 3px rgba(231, 169, 75, 0.12);
+}
+
+
+/* Select */
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: #241010;
+
+  color: white;
+}
+
+
+/* Button */
+
+.gift-button {
+  margin-top: 8px;
+
+  width: 100%;
+
+  padding: 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #e7a94b;
+
+  color: #1b0d0d;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+
+.gift-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px rgba(231, 169, 75, 0.25);
+}
+
+
+/* Bottom */
+
+.bottom-decoration {
+  margin-top: 25px;
+
+  font-size: 18px;
+
+  opacity: 0.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+  .gift-form-section {
+    padding: 30px 22px;
+  }
+
+  .gift-form-section h1 {
+    font-size: 27px;
+  }
+
+}

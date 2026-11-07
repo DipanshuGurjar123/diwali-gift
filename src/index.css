@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* Gift box bounce */
+@keyframes giftBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+.gift-box-bounce {
+  animation: giftBounce 0.8s ease-in-out;
+}
+
+/* Gift lid opening */
+@keyframes openGiftLid {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-75px) rotate(-30deg);
+  }
+}
+
+.gift-lid-open {
+  animation: openGiftLid 0.8s ease-in-out forwards;
+  transform-origin: left bottom;
+}
+
+/* Sparkle effect */
+@keyframes sparkleEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(30deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(60deg);
+  }
+}
+
+.gift-sparkle {
+  position: absolute;
+  z-index: 30;
+  font-size: 24px;
+  pointer-events: none;
+  animation: sparkleEffect 0.8s ease-in-out forwards;
+}
+
+/* Greeting card reveal */
+@keyframes greetingReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(35px) scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.greeting-reveal {
+  animation: greetingReveal 0.7s ease-out both;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
