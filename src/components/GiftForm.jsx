@@ -51,7 +51,7 @@ function GiftForm({ formData, setFormData, onSubmit }) {
                     {/* Nickname */}
                     <div>
                         <label className="mb-2 block text-sm font-medium text-amber-100">
-                            What do you call them?
+                            What do they call me?
                         </label>
 
                         <input
